@@ -3,7 +3,7 @@ import { ApiProperty } from '@nestjs/swagger';
 
 export class Hello {
     @ApiProperty()
-    id: Number
+    id: number
     @ApiProperty()
-    text: String
+    text: string
 }

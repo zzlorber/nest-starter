@@ -1,4 +1,4 @@
-import { Module, NestModule, HttpModule } from '@nestjs/common';
+import { Module, HttpModule } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ConfigModule } from '@nestjs/config';
 import * as dotenv from 'dotenv';
@@ -17,6 +17,6 @@ dotenv.config()
   controllers: [AppController],
   providers: [],
 })
-export class AppModule implements NestModule {
-  configure() { }
+export class AppModule  {
+
 }

@@ -12,5 +12,4 @@ import { HelloSchema } from './schemas/hello.schema';
 })
 
 export class HelloModule {
-  configure() {}
 }
