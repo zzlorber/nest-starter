@@ -9,14 +9,14 @@ const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost/nest'
 dotenv.config()
 @Module({
   imports: [
-    HelloModule, 
-    HttpModule, 
+    HelloModule,
+    HttpModule,
     ConfigModule.forRoot(),
     MongooseModule.forRoot(MONGO_URI)
   ],
   controllers: [AppController],
   providers: [],
 })
-export class AppModule  {
+export class AppModule {
 
 }
